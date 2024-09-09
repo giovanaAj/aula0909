@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<!--Curriculum utilizando estilo CSS Prof Paulo Camargo 12/12/22 SENAI UNID 1.18 Santo André-SP -->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Curriculum Daniela Bezerra</title>
+<!--Carregando as fontes do google fonts-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+href="https://fonts.googleapis.com/css2?family=Hubballi&family=Montserrat:wght@300;400&display=swap"
+rel="stylesheet">
+<!-- <link rel="stylesheet" href="style.css"> -->
+<!-- Carregando icone do fontawesome-->
+<script src="https://kit.fontawesome.com/02cf9fe2d7.js" crossorigin="anonymous"></script>
+
+<style>
+    #Cabecalho {
+    
+    background-color: #F2B47E; /* cor de fundo da div cabecalho*/
+    margin-top: 50px; /* margem superior*/
+    margin-bottom: 50px; /* margem inferiorr*/
+    font-family: 'Hubballi', cursive; /* aplicacao da fonte google*/
+    }
+    #nomeEtitulo {
+    
+    background-color: white;
+    width: 500px; /* largura da div filha */
+    margin: 0 auto; /* margem inferior 0 e as demais ajusta automaticamente */
+    text-align: center; /* alinhamento de texto */
+    }
+    
+    #nomeEtitulo h1,h2 { margin: 0; /* elimina a mergem entre as linha */
+    
+    }
+    h1,h2,h3 {text-transform: uppercase;} /* define maiusculo para todo o texto */
+    
+    #contato {
+    
+    list-style-type: none; /* retira as bolinhas dos textos de contato*/
+    }
+    #contato i {
+    
+    width: 30px; /* permite espaçamento entre os ícone e o texto dos icone*/
+    color: #D9A78B; /* Altera a cor dos icones*/
+    }
+    
+    #recipiente { /*pai da Barra_lateral e da content*/
+    display: grid; /*disposição de um grid na tela*/
+    grid-template-columns: 30% auto; /* Define quais serão as colunas do nosso grid*/
+    grid-column-gap: 20px; /*Adiciona espaço nas colunas entre os Grids*/
+    }
+    
+    #Barra_lateral , #content {
+    display: flex;
+    flex-direction: column; /*Direção do flex é sentido vertical*/
+    row-gap: 20px; /*entre cada linha da coluna do objeto tem um espaço de 20px*/
+    }
+    .cartao h3 {
+    
+    font-family: 'Hubballi'; cursive;
+    }
+    .cartao {
+    
+    font-family: Montserrat;
+    border: 5px solid #586673; /*Insere a borda na dic cartão*/
+    border-radius: 15px; /*arredonda as bordas da Div cartão */
+    padding: 20px; /*aumenta o espaçamento entre o texto e a borda do grid*/
+    }
+    
+    </style>
+</head>
+<body>
+<div id="Cabecalho">
+<div id="nomeEtitulo">
+<h1> Daniela Bezerra</h1>
+<h2> Desenvolvedora de Sistemas</h2>
+</div>
+</div>
+<div id="recipiente">
+<div id="Barra_lateral">
+<div class="cartao">
+<h3>Contato</h3>
+<ul id="contato">
+<img width="100" src="https://assets.propmark.com.br/uploads/2022/02/WhatsApp-Image-2022-02-18-at-08.52.06.jpeg">
+
+<li><i class="fa-solid fa-envelope"></i>senai@email.com.br</li>
+<li><i class="fa-solid fa-phone"></i>11 9209 7070</li>
+<li><i class="fa-solid fa-location-pin"></i>Santo Andre-sp</li>
+</ul>
+</div>
+<div class="cartao">
+<h3>Habilidades</h3>
+<ul>
+<li>html</li>
+<li>CSS</li>
+<li>JavaScrip</li>
+</ul>
+</div>
+<div class="cartao">
+<h3>Formação Academica</h3>
+<ul>
+<li>Analista de Sistemas</li>
+<li>Programador de Software</li>
+<li>DevOps</li>
+</ul>
+</div>
+<div class="cartao">
+<h3>Links</h3>
+<ul>
+<li><a target="_blank" href="https://linkedin.com">Linkedin</a></li>
+<li><a target="_blank" href="https://apinfo.com">Apinfo</a></li>
+<li><a target="_blank" href="https://vagas.com.br">Vagas.com</a></li>
+</ul>
+</div>
+</div>
+<div id="content">
+<div class="cartao">
+<h3> Sobre mim</h3>
+<p> Sou Daniela Bezerra, uma desenvolvedora de sistemas Com uma sólida formação em Analista de Sistemas e Programadora de Software e mais de 4 anos de experiência em desenvolvimento de aplicações. Minha expertise inclui uma ampla gama de tecnologias, desde desenvolvimento front-end e back-end até integração de APIs e otimização de banco de dados. Minha experiência inclui colaboração em projetos diversos, desde startups ágeis até grandes corporações, onde sempre busquei otimizar processos e contribuir para o sucesso dos projetos.</p>
+
+</div>
+<div class="cartao">
+<h3> Experiências profissionais</h3>
+<p>
+<b>Empresa Tecnologia S/A - Jan/19 a Dez/ 22</b><br>
+Realizado projeto de datacenter da empresa
+<ul>
+<li> Tecnica de Desenvolvimento</li>
+<li> Desenvolvedora de software</li>
+</ul>
+</p>
+<p>
+<b>Empresa Desenvolvetech S/A - Jan/18 a Dez/ 18</b><br>
+Realizado projeto de migração dos servidores para nuvem
+<ul>
+<li> Tecnica de Desenvolvimento</li>
+<li> Desenvolvedora de software</li>
+</ul>
+</p>
+<b>Vídeo com as minhas habilidades</b><br>
+<div class="media">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SV7TL0hxmIQ?si=h2d6yjQhnDrBaYsZ"
+
+frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-
+picture" allowfullscreen></iframe>
+
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

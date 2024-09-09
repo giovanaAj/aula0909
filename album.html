@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NA PRATICA - Álbum de Fotos com Flexbox</title>
+<link rel="stylesheet" href="estilos/style.css">
+<link rel="stylesheet" href="estilos/medias.css">
+</head>
+<body>
+<style>
+@charset "UTF-8";
+
+* { /* Renderização */
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+
+}
+
+body { /* modelo da fonte utilizada */
+font-family: Arial, Helvetica, sans-serif;
+font-size: 1em;
+}
+
+header {
+/* alinhamento dos textos*/
+text-align: center;
+padding: 30px;
+}
+
+main#album {
+/*Renderiza os elementos*/
+display: flex;
+/*Coloca o conteúdo em linha e não permite a quebra de linha.*/
+flex-flow: row wrap;
+}
+
+section.coluna {
+/*border: 1px dashed black;*/
+flex: 1 1 100%;
+padding: 0px 5px;
+
+}
+
+section > img {
+/* Especifica a largura e a altura de uma imagem*/
+width: 100%;
+/*indica a distância na parte inferior do conteúdo*/
+padding-bottom: 10px;
+border-radius: 5px;
+}
+
+footer { /* Rodapé da pagina */
+background-color: black;
+color: white;
+padding: 15px;
+text-align: center;
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+section.coluna {
+flex: 1 1 50%;
+}
+}
+@media screen and (min-width: 992px) {
+section.coluna {
+flex: 1 1 25%;
+}
+}
+</style>
+    
+<header>
+<h1>Código HTML e CSS na Prática - Álbum de Fotos</h1>
+
+</header>
+
+<main id="album">
+<section class="coluna">
+<!--O Elemento img indica a inserção de uma imagem no documento html-->
+<img src="images (1).jpg" alt="Golfinhos">
+<img src="cachorro.jpg" alt="Fight for your right">
+<img src="imagem003.jpg" alt="Gota">
+<img src="imagem004.jpg" alt="Flores">
+<img src="imagem005.jpg" alt="Morangos">
+<img src="campo.jpg" alt="campo de flores">
+</section>
+<section class="coluna">
+<img src="imagem006.jpg" alt="Homem invisível">
+<img src="imagem007.jpg" alt="Café &lt;3">
+<img src="imagem008.jpg" alt="Cachorro">
+<img src="imagem009.jpg" alt="Drink na piscina">
+<img src="montanha.jpg" alt="neve">
+
+
+
+</section>
+<section class="coluna">
+<img src="imagem011.jpg" alt="Tapete vermelho">
+<img src="imagem012.jpg" alt="Mergulho">
+<img src="imagem013.jpg" alt="Água viva">
+<img src="imagem014.jpg" alt="Roupa florida">
+<img src="imagem015.jpg" alt="Folhas">
+<img src="girasol.jpg" alt="girasol">
+
+</section>
+<section class="coluna">
+<img src="imagem016.jpg" alt="Olhos coloridos">
+<img src="imagem017.jpg" alt="Negativo da foto">
+<img src="imagem018.jpg" alt="Flor laranja">
+<img src="imagem019.jpg" alt="Bolsa verde, meias vermelhas">
+<img src="imagem020.jpg" alt="Brilho na água">
+
+</section>
+</main>
+<footer>
+<p> SENAI SENAI SENAI SENAI </p>
+</footer>
+</body>
+</html>
